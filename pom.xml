@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -14,9 +14,12 @@
 	<name>BackendSide</name>
 	<description>Backend application</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>20</java.version>
+		<maven.compiler.source>20</maven.compiler.source>
+		<maven.compiler.target>20</maven.compiler.target>
 	</properties>
 	<dependencies>
+		<!-- Spring Boot Dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -29,127 +32,39 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
-			<optional>true</optional>
 		</dependency>
+
+		<!-- PostgreSQL Database Driver -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Project Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Testing Dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.hyperwallet.android.ui</groupId>
-			<artifactId>userrepository</artifactId>
-			<version>1.0.0-beta14</version>
-		</dependency>
-		<dependency>
-			<groupId>com.hyperwallet.android.ui</groupId>
-			<artifactId>userrepository</artifactId>
-			<version>1.0.0-beta14</version>
-		</dependency>
-        <dependency>
-            <groupId>com.lob</groupId>
-            <artifactId>lob-java</artifactId>
-            <version>13.4.2</version>
-        </dependency>
+
+
+		<!-- Lob Java SDK -->
 		<dependency>
 			<groupId>com.lob</groupId>
 			<artifactId>lob-java</artifactId>
 			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>lob</groupId>
-			<artifactId>lob</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>lob</groupId>
-			<artifactId>lob</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lob</groupId>
-			<artifactId>lob-java</artifactId>
-			<version>13.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>lob</groupId>
-			<artifactId>lob</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
